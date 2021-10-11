@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Desafio 1</title>
+    <title>Desafio - 1</title>
 </head>
 <body>
-    <header id="cabecalho">
-
-        <h1 id="logo">LOGO</h1>
-
-        <nav id="menu">
-            <a href="#">Home</a>
-            <a href="#">Contato</a>
-            <a href="#">Sobre</a>
+    <header id="cabecalho" class="flex">
+        <h1 id="logo" class="flex">LOGO</h1>
+        <nav id="menu" class="flex">
+            <div id="nav-list" class="flex">
+                <ul class="flex">
+                    <li id="background-a" class="flex"><a href="#">Home</a></li>
+                    <li class="flex"><a href="#">Contato</a></li>
+                    <li class="flex"><a href="#">Sobre</a></li>
+                </ul>
+            </div>
         </nav>
-    
     </header>
 
-    <main id="central">
-
-        <div id="conteudo-central">
-
-        </div>
-
+    <main class="flex">
+        <section id="conteudo-central" class="flex">
+            <div id="texto-descritivo" class="flex">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae molestiae saepe eligendi quo illum placeat"</p>
+            </div>
+            <div id="formulario" class="flex">                
+                <form method="post" name="input-email" class="flex">                   
+                    <label for="email">Informe seu endereço de e-mail</label>
+                    <input type="email" id="email" name="email" value="" required placeholder="e-mail">                                        
+                </form>
+                <input type="button" id="submit" calss="flex" value="ENVIAR">
+            </div>
+        </section>
     </main>
 
-    <footer id="rodape">
-        <h2>by TI - ACADEMY</h2>
+    <footer id="rodape" class="flex">
+        <h3>by TI - ACADEMY</h3>
     </footer>
 </body>
 </html>
