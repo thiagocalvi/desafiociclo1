@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio - 2</title>
+</head>
+<body>
+    <header class="flex" id="header-menu">
+        <h1 id="title-header">ME ACHA!</h1>
+        <h2 id="sub-title-header">ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2>
+        <div id="icon" class="flex">
+            <span class="material-icons-outlined icon-header">travel_explore</span>
+        </div>
+    </header>
+    <main id="conteudo-central" class="flex">
+        <form method="get" id="form" class="flex">
+            <fieldset id="formulario">
+                <label for="cep">Cep<input type="text" name="cep" id="cep" class="flex"></label>
+                <label for="rua">Rua<input type="text" name="rua" id="rua" class="flex"></label>
+                <label for="bairro">Bairro<input type="text" name="bairro" id="bairro" class="flex"></label>
+                <label for="cidade">Cidade<input type="text" name="cidade" id="cidade" class="flex"></label>
+                <label for="estado">Estado<input type="text" name="estado" id="estado" class="flex"></label>
+                <input type="submit" id="buscar" value="BUSCAR">
+            </fieldset>
+        </form>
+    </main>       
+</body>
+</html>
