@@ -49,7 +49,7 @@ header#cabecalho nav#menu ul li a{
 }
 header#cabecalho nav#menu ul li{
     height: 100%;
-    width: 50%;
+    width: 100%;
     margin: 2px;
     justify-content: center;
     align-items: center;
@@ -67,11 +67,10 @@ header#cabecalho nav#menu ul li:hover{
 
 /*INICIO DO MAIN*/
 main{
-    width: 100%;
-    align-items: center;
+    justify-content: center;
     font-family: var(--font-padrao);
     font-size: 1.2rem;
-    justify-content: center;
+    margin: auto;
 }
 section#conteudo-central{
     margin: 100px auto;
@@ -133,4 +132,37 @@ footer#rodape{
     bottom: 0;
     justify-content: center;  
     align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+   
+    #conteudo-central{
+        flex-direction: column;
+    }
+    section#conteudo-central div#texto-descritivo{
+        border: none;
+        border-bottom: 1px dashed #000;
+        width: auto;
+    }
+    #div#formulario, section#conteudo-central div#formulario{
+        width: auto;
+    }
+    header#cabecalho nav#menu{
+        width: 70%;
+        align-items: center;
+    }
+    header#cabecalho h1#logo{
+        width: 30%;
+        justify-content: center;
+        margin: 0;
+    }
+
+}
+@media screen and (max-width: 640px){
+    section#conteudo-central{
+        width: 90%;
+    }
+    header#cabecalho nav#menu ul li{
+        margin-right: 20px;
+    }
 }
