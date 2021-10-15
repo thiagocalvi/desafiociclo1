@@ -160,9 +160,16 @@ footer#rodape{
 }
 @media screen and (max-width: 640px){
     section#conteudo-central{
-        width: 90%;
+        width: auto;
+    }
+    header#cabecalho nav#menu{
+        display: inline;
+        padding-left: 35px;
     }
     header#cabecalho nav#menu ul li{
-        margin-right: 20px;
+        padding-right: 2px;
+        width: auto;
     }
+    
+    
 }
