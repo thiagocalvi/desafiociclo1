@@ -159,16 +159,21 @@ footer#rodape{
 
 }
 @media screen and (max-width: 640px){
+    header#cabecalho{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    header#cabecalho h1#logo{
+        margin-top: 10px;
+    }
     section#conteudo-central{
         width: auto;
     }
     header#cabecalho nav#menu{
-        display: inline;
-        padding-left: 35px;
-    }
-    header#cabecalho nav#menu ul li{
-        padding-right: 2px;
-        width: auto;
+        width: 100vw;
+        padding: 15px 0 10px 0;
+        justify-content: space-around;
     }
     
     
